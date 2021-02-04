@@ -1,3 +1,21 @@
+" Auto-install vim-plug (if not found).
+if empty(glob('$HOME/.config/nvim/autoload/plug.vim'))
+	silent !curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs
+		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall
+endif
+
+" Auto-install missing plugins.
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+	\| PlugInstall --sync | source $MYVIMRC
+	\| endif
+
+call plug#begin('$HOME/.config/nvim/plugged')
+
+" ...
+     
+call plug#end()
+
 filetype on
 filetype plugin on
 filetype indent on
