@@ -12,8 +12,9 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 call plug#begin('$HOME/.config/nvim/plugged')
 
-" ...
-     
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
 
 filetype on
@@ -47,5 +48,7 @@ nnoremap <C-K> <C-W>k
 nnoremap <C-J> <C-W>j
 nnoremap <C-H> <C-W>h
 nnoremap <C-L> <C-W>l
+
+nnoremap <C-P> :FZF<CR>
 
 let g:netrw_banner = 0
