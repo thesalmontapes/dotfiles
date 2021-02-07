@@ -18,6 +18,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
+Plug 'fatih/vim-go', { 'do': 'GoUpdateBinaries' }
 
 call plug#end()
 
@@ -56,3 +57,24 @@ nnoremap <C-L> <C-W>l
 nnoremap <C-P> :FZF<CR>
 
 let g:netrw_banner = 0
+
+set path+=$GOPATH/**
+let g:go_highlight_trailing_whitespace_error = 1
+let g:go_highlight_space_tab_error = 1
+let g:go_metalinter_autosave = 1
+let g:go_fmt_command = 'goimports'
+let g:go_list_type = 'quickfix'
+let g:go_gopls_enabled = 0
+let g:go_def_mode = 'godef'
+let g:go_info_mode = 'guru'
+let g:go_referrers_mode = 'guru'
+
+augroup vimrc_go
+	autocmd!
+	autocmd FileType go nnoremap <buffer> <Leader>d :GoDeclsDir<CR>
+	autocmd FileType go nnoremap <buffer> <Leader>r :up<CR><Plug>(go-run)
+	autocmd FileType go nnoremap <buffer> <Leader>b :up<CR><Plug>(go-build)
+	autocmd	FileType go nnoremap <buffer> <Leader>t :up<CR><Plug>(go-test)
+	autocmd FileType go nnoremap <buffer> <Leader>c <Plug>(go-coverage-toggle)
+	autocmd FileType go nnoremap setlocal noexpandtab tabstop=4 shiftwidth=4 textwidth=100
+augroup END

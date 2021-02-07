@@ -24,6 +24,7 @@ brew "ripgrep"
 brew "rsync"
 brew "tmux"
 brew "wget"
+brew "node"
 
 # Languages
 brew "go"
