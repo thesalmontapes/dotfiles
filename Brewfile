@@ -18,6 +18,7 @@ brew "git"
 brew "grep"
 brew "neovim"
 brew "rsync"
+brew "tmux"
 brew "wget"
 
 # Languages
