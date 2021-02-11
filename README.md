@@ -19,3 +19,9 @@ Install the [Brewfile](Brewfile) dependencies.
 ```
 brew bundle
 ```
+
+If Alacritty does not open, try:
+
+```
+brew install --cask --no-quarantine alacritty
+```

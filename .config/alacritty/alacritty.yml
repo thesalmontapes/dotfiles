@@ -1,0 +1,55 @@
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+  padding:
+    x: 20
+    y: 15
+  dynamic_padding: false
+  decorations: full
+  startup_mode: Windowed
+scrolling:
+  history: 10000
+  multiplier: 3
+font:
+  size: 14.0
+  offset:
+    x: 0
+    y: 6
+  glyph_offset:
+    x: 0
+    y: 0
+
+# Colors (snazzy)
+colors:
+  primary:
+    background: '0x282a36'
+    foreground: '0xe2e4e5'
+  cursor:
+    text:   '0x282a36'
+    cursor: '0xe2e4e5'
+  selection:
+    text:       '0xe2e4e5'
+    background: '0x34353e'
+  normal:
+    black:   '0x282a36' # 0
+    red:     '0xff5c57' # 1
+    green:   '0x5af78e' # 2
+    yellow:  '0xf3f99d' # 3
+    blue:    '0x57c7ff' # 4
+    magenta: '0xff6ac1' # 5
+    cyan:    '0x9aedfe' # 6
+    white:   '0xe2e4e5' # 7
+  bright:
+    black:   '0x78787e' # 8
+    red:     '0xff5c57' # 9
+    green:   '0x5af78e' # 10
+    yellow:  '0xf3f99d' # 11
+    blue:    '0x57c7ff' # 12
+    magenta: '0xff6ac1' # 13
+    cyan:    '0x9aedfe' # 14
+    white:   '0xf1f1f0' # 15
+  indexed_colors:
+    - { index: 18, color: '0x34353e' } # (vim): unselected status bar
+    - { index: 19, color: '0x43454f' } # (vim): selection
+    - { index: 20, color: '0xa5a5a9' } # (vim): selected status bar

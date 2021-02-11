@@ -6,6 +6,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 
 # Apps
+cask "alacritty"
 cask "google-chrome"
 cask "spotify"
 cask "zoom"
