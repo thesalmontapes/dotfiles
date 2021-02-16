@@ -45,6 +45,8 @@ set splitbelow
 set fillchars+=vert:\|
 set wildignorecase
 
+colorscheme thesalmontapes
+
 let mapleader = ' '
 
 nnoremap Y y$
