@@ -5,7 +5,7 @@
 Clone this repository.
 
 ```
-git clone https://github.com/TheSalmonTapes/dotfiles.git && cd dotfiles
+git clone https://github.com/thesalmontapes/dotfiles.git && cd dotfiles
 ```
 
 Install Homebrew.
