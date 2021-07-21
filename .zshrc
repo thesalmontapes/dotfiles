@@ -14,6 +14,8 @@ alias gt="git log --all --graph --oneline --decorate"
 cd() { builtin cd "$@"; ls; } # cd: change directory and list
 alias ..="cd .."
 
+alias pb="curl -F c=@- pb"
+
 if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/usr/local/opt/fzf/bin"
 fi
