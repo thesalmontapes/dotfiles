@@ -1,4 +1,4 @@
-PROMPT="%~ %# "
+PROMPT="[%D{%L:%M:%S}] %~ %# "
 
 alias vim="nvim"
 
