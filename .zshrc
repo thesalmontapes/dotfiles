@@ -3,7 +3,7 @@ PROMPT="[%D{%L:%M:%S}] %~ %# "
 alias vim="nvim"
 
 alias ls="ls -G"
-alias la="ls -lA"
+alias la="ls -lAh"
 
 alias gl="git log"
 alias gb="git branch"
