@@ -50,3 +50,8 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS"\
 }
 
 _gen_fzf_default_opts
+
+if which pyenv > /dev/null; then
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+fi

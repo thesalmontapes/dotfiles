@@ -28,4 +28,4 @@ brew "node"
 
 # Languages
 brew "go"
-brew "python"
+brew "pyenv"
