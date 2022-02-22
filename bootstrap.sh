@@ -7,3 +7,5 @@ rsync --exclude ".git" \
       --exclude "Brewfile" \
       -avh --no-perms . $HOME 
 
+source $HOME/.zshrc
+source $HOME/.zshenv
