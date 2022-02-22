@@ -14,3 +14,4 @@ alias vim="nvim"
 
 alias pb="curl -F c=@- pb"
 
+alias refresh="source $HOME/.zshrc"
