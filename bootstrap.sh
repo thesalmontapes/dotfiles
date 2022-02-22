@@ -7,5 +7,3 @@ rsync --exclude ".git" \
       --exclude "Brewfile" \
       -avh --no-perms . $HOME 
 
-pyenv install 2.7.18
-pyenv install 3.10.0
