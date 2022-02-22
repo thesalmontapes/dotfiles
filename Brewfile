@@ -25,6 +25,7 @@ brew "rsync"
 brew "tmux"
 brew "wget"
 brew "node"
+brew "antigen"
 
 # Languages
 brew "go"
