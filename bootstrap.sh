@@ -6,3 +6,5 @@ rsync --exclude ".git" \
       --exclude "README.md" \
       --exclude "Brewfile" \
       -avh --no-perms . $HOME 
+
+source $HOME/.zshrc
