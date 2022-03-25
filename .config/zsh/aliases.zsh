@@ -1,5 +1,3 @@
-cd() { builtin cd "$@"; ls; } # cd: change directory and list
-
 alias ..="cd .."
 alias ls="ls -G"
 alias la="ls -lAh"
