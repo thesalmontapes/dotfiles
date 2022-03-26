@@ -1,6 +1,6 @@
 alias ..="cd .."
 alias ls="ls -G"
-alias la="ls -lAh"
+alias ll="ls -lAh"
 
 alias gl="git log"
 alias gb="git branch"
