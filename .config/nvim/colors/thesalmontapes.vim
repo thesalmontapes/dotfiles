@@ -84,6 +84,9 @@ hi! link Error     ErrorMsg
 hi! link NvimInternalError ErrorMsg
 
 "}}}
+" Autocompletion {{{
+hi Pmenu           ctermfg=15  ctermbg=18
+"}}}
 " Git {{{
 hi gitCommitBranch               ctermfg=3
 hi gitCommitSelectedType         ctermfg=10
