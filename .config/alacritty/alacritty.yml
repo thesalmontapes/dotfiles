@@ -3,8 +3,8 @@ window:
     columns: 0
     lines: 0
   padding:
-    x: 20
-    y: 15
+    x: 8
+    y: 6
   dynamic_padding: false
   decorations: full
   startup_mode: Windowed
@@ -12,13 +12,23 @@ scrolling:
   history: 10000
   multiplier: 3
 font:
+  normal:
+    family: Menlo
+    style: Regular
+  bold:
+    family: Menlo
+    style: Bold
+  italic:
+    family: Menlo
+    style: Italic
   size: 14.0
   offset:
     x: 0
-    y: 6
+    y: 0
   glyph_offset:
     x: 0
     y: 0
+  use_thin_strokes: true
 
 # Colors (snazzy)
 colors:
