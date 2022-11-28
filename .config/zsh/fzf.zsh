@@ -1,8 +1,6 @@
-if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
-  export PATH="${PATH:+${PATH}:}/usr/local/opt/fzf/bin"
+if [ ! -f $HOME/.fzf.zsh ]; then
+    $(brew --prefix)/opt/fzf/install --no-bash --no-fish
 fi
-[[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.zsh" 2> /dev/null
-source "/usr/local/opt/fzf/shell/key-bindings.zsh"
 
 _gen_fzf_default_opts() { # https://github.com/fnune/base16-fzf
 
