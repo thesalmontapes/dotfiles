@@ -20,6 +20,7 @@ brew "rsync"
 brew "tmux"
 brew "wget"
 brew "antigen"
+brew "gopls"
 
 # Languages
 brew "go"
