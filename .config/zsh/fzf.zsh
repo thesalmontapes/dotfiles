@@ -2,6 +2,8 @@ if [ ! -f $HOME/.fzf.zsh ]; then
     $(brew --prefix)/opt/fzf/install --no-bash --no-fish
 fi
 
+source ~/.fzf.zsh
+
 _gen_fzf_default_opts() { # https://github.com/fnune/base16-fzf
 
 local color00='#282a36'
