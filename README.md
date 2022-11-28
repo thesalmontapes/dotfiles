@@ -8,16 +8,9 @@ Clone this repository.
 git clone https://github.com/thesalmontapes/dotfiles.git && cd dotfiles
 ```
 
-Install Homebrew.
-
+Run the install script.
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-Install the [Brewfile](Brewfile) dependencies.
-
-```
-brew bundle
+./bootstrap.sh
 ```
 
 If Alacritty does not open, try:
