@@ -27,4 +27,4 @@ alias pb="curl -F c=@- pb"
 
 alias kc="kubectl"
 
-alias refresh="source $HOME/.zshrc"
+alias refresh="source $HOME/.zshenv $HOME/.zshrc"

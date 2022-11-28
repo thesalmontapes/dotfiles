@@ -10,7 +10,7 @@ git clone https://github.com/thesalmontapes/dotfiles.git && cd dotfiles
 
 Run the install script.
 ```
-./bootstrap.sh
+source bootstrap.sh
 ```
 
 If Alacritty does not open, try:
