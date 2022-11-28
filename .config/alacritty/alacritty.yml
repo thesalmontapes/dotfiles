@@ -28,7 +28,6 @@ font:
   glyph_offset:
     x: 0
     y: 0
-  use_thin_strokes: true
 
 # Colors (snazzy)
 colors:
