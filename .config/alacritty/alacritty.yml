@@ -8,6 +8,7 @@ window:
   dynamic_padding: false
   decorations: full
   startup_mode: Windowed
+  opacity: 0.95
 scrolling:
   history: 10000
   multiplier: 3
