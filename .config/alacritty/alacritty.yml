@@ -30,36 +30,82 @@ font:
     x: 0
     y: 0
 
-# Colors (snazzy)
+# Source: https://github.com/catppuccin/alacritty
 colors:
-  primary:
-    background: '#282a36'
-    foreground: '#e2e4e5'
-  cursor:
-    text:   '#282a36'
-    cursor: '#e2e4e5'
-  selection:
-    text:       '#e2e4e5'
-    background: '#34353e'
-  normal:
-    black:   '#282a36' # 0
-    red:     '#ff5c57' # 1
-    green:   '#5af78e' # 2
-    yellow:  '#f3f99d' # 3
-    blue:    '#57c7ff' # 4
-    magenta: '#ff6ac1' # 5
-    cyan:    '#9aedfe' # 6
-    white:   '#e2e4e5' # 7
-  bright:
-    black:   '#78787e' # 8
-    red:     '#ff5c57' # 9
-    green:   '#5af78e' # 10
-    yellow:  '#f3f99d' # 11
-    blue:    '#57c7ff' # 12
-    magenta: '#ff6ac1' # 13
-    cyan:    '#9aedfe' # 14
-    white:   '#f1f1f0' # 15
-  indexed_colors:
-    - { index: 18, color: '#34353e' } # (vim): unselected status bar
-    - { index: 19, color: '#43454f' } # (vim): selection
-    - { index: 20, color: '#a5a5a9' } # (vim): selected status bar
+    primary:
+        background: "#1E1E2E" # base
+        foreground: "#CDD6F4" # text
+        # Bright and dim foreground colors
+        dim_foreground: "#CDD6F4" # text
+        bright_foreground: "#CDD6F4" # text
+
+    # Cursor colors
+    cursor:
+        text: "#1E1E2E" # base
+        cursor: "#F5E0DC" # rosewater
+    vi_mode_cursor:
+        text: "#1E1E2E" # base
+        cursor: "#B4BEFE" # lavender
+
+    # Search colors
+    search:
+        matches:
+            foreground: "#1E1E2E" # base
+            background: "#A6ADC8" # subtext0
+        focused_match:
+            foreground: "#1E1E2E" # base
+            background: "#A6E3A1" # green
+        footer_bar:
+            foreground: "#1E1E2E" # base
+            background: "#A6ADC8" # subtext0
+
+    # Keyboard regex hints
+    hints:
+        start:
+            foreground: "#1E1E2E" # base
+            background: "#F9E2AF" # yellow
+        end:
+            foreground: "#1E1E2E" # base
+            background: "#A6ADC8" # subtext0
+
+    # Selection colors
+    selection:
+        text: "#1E1E2E" # base
+        background: "#F5E0DC" # rosewater
+
+    # Normal colors
+    normal:
+        black: "#45475A" # surface1
+        red: "#F38BA8" # red
+        green: "#A6E3A1" # green
+        yellow: "#F9E2AF" # yellow
+        blue: "#89B4FA" # blue
+        magenta: "#F5C2E7" # pink
+        cyan: "#94E2D5" # teal
+        white: "#BAC2DE" # subtext1
+
+    # Bright colors
+    bright:
+        black: "#585B70" # surface2
+        red: "#F38BA8" # red
+        green: "#A6E3A1" # green
+        yellow: "#F9E2AF" # yellow
+        blue: "#89B4FA" # blue
+        magenta: "#F5C2E7" # pink
+        cyan: "#94E2D5" # teal
+        white: "#A6ADC8" # subtext0
+
+    # Dim colors
+    dim:
+        black: "#45475A" # surface1
+        red: "#F38BA8" # red
+        green: "#A6E3A1" # green
+        yellow: "#F9E2AF" # yellow
+        blue: "#89B4FA" # blue
+        magenta: "#F5C2E7" # pink
+        cyan: "#94E2D5" # teal
+        white: "#BAC2DE" # subtext1
+
+    indexed_colors:
+        - { index: 16, color: "#FAB387" }
+        - { index: 17, color: "#F5E0DC" }

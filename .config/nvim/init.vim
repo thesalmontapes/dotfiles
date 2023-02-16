@@ -19,6 +19,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'fatih/vim-go', { 'do': 'GoUpdateBinaries' }
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 call plug#end()
 
@@ -45,7 +46,7 @@ set splitbelow
 set fillchars+=vert:\|
 set wildignorecase
 
-colorscheme thesalmontapes
+colorscheme catppuccin-mocha
 
 let mapleader = ' '
 
