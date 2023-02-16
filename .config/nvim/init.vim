@@ -43,7 +43,6 @@ set incsearch
 set nohlsearch
 set splitright
 set splitbelow
-set fillchars+=vert:\|
 set wildignorecase
 
 colorscheme catppuccin-mocha
