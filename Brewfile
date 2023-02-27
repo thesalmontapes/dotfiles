@@ -26,3 +26,4 @@ brew "kubectl"
 # Languages
 brew "go"
 brew "pyenv"
+brew "pyright"
