@@ -57,6 +57,7 @@ nnoremap <C-H> <C-W>h
 nnoremap <C-L> <C-W>l
 
 nnoremap <C-P> :FZF<CR>
+nnoremap <C-B> :Buffers<CR>
 
 let g:netrw_banner = 0
 
