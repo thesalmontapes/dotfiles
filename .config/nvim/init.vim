@@ -44,6 +44,7 @@ set nohlsearch
 set splitright
 set splitbelow
 set wildignorecase
+set mouse=
 
 colorscheme catppuccin-mocha
 
