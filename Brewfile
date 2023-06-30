@@ -8,6 +8,7 @@ tap "homebrew/core"
 # Apps
 cask "alacritty"
 cask "google-cloud-sdk"
+cask "soundsource"
 
 # Tools
 brew "curl"
