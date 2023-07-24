@@ -13,7 +13,6 @@ tmux() {
     else
       # Session doesn't exist, create a new session with four windows
       command tmux new-session -d -s "$session_name" -n "source" "zsh"
-      command tmux new-window -t "$session_name" -n "test" "zsh"
       command tmux new-window -t "$session_name" -n "client" "zsh"
       command tmux new-window -t "$session_name" -n "server" "zsh"
       command tmux select-window -t "${session_name}:0"
