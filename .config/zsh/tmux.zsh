@@ -1,4 +1,4 @@
-tmuxs() {
+tm() {
   local session_name="$1"
   
   # Check if the session with the same name already exists
