@@ -1,4 +1,12 @@
 tm() {
+
+  # Check if exactly one argument is provided
+  if [ $# -ne 1 ]; then
+    echo "Error: Please specify a session name."
+    echo "Usage: tm <session_name>"
+    return 1
+  fi
+
   local session_name="$1"
   
   # Check if the session with the same name already exists
