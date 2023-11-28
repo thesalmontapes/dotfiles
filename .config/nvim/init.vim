@@ -20,6 +20,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'neovim/nvim-lspconfig'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'nvim-tree/nvim-web-devicons'
 
 call plug#end()
 
@@ -63,6 +65,13 @@ nnoremap <C-B> :Buffers<CR>
 let g:netrw_banner = 0
 
 lua << EOF
+
+--- Initialize lualine.
+require('lualine').setup {
+  options = {
+    theme = 'catppuccin',
+  },
+}
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

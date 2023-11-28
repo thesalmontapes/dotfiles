@@ -3,10 +3,12 @@ cask_args appdir: "/Applications"
 # Taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 
-# Apps
+# Casks
 cask "alacritty"
+cask "font-fira-code-nerd-font"
 cask "google-cloud-sdk"
 cask "soundsource"
 
