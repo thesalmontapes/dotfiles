@@ -123,6 +123,9 @@ require('lspconfig')['gopls'].setup{
     },
 }
 
+--- Disable LSP logs
+vim.lsp.set_log_level("off")
+
 --- Format on-save
 vim.api.nvim_create_autocmd('BufWritePre', {
   pattern = '*.go',
