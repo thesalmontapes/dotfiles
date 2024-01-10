@@ -2,9 +2,7 @@ cask_args appdir: "/Applications"
 
 # Taps
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 
 # Casks
 cask "alacritty"
