@@ -23,6 +23,7 @@ brew "tmux"
 brew "wget"
 brew "antigen"
 brew "kubectl"
+brew "graphviz"
 
 # Languages
 brew "go"
