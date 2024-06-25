@@ -68,6 +68,7 @@ nnoremap <C-L> <C-W>l
 
 nnoremap <C-P> :FZF<CR>
 nnoremap <C-B> :Buffers<CR>
+nnoremap <C-E> :Explore<CR>
 
 let g:netrw_banner = 0
 
@@ -196,7 +197,7 @@ require('lspconfig')['gopls'].setup{
                 unusedparams = true,
             },
             staticcheck = true,
-            buildFlags = {"-tags=integration"},
+            buildFlags = {"-tags=integration,studio"},
         },
     },
 }
