@@ -12,7 +12,6 @@ cask "visual-studio-code"
 
 # Tools
 brew "curl"
-brew "fzf"
 brew "git"
 brew "grep"
 brew "grpcurl"
