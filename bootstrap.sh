@@ -11,16 +11,17 @@ rsync --exclude ".git" \
       --exclude "bootstrap.sh" \
       --exclude "README.md" \
       --exclude "Brewfile" \
+      --exclude "python" \
       --exclude "vscode" \
       -avh --no-perms . $HOME
 
 source $HOME/.zshenv
 source $HOME/.zshrc
 
-# Python setup
-pyenv install --skip-existing 2.7.18
-pyenv install --skip-existing 3.10.0
-pyenv global 3.10.0
-
-# VSCode configuration
-./vscode/install.sh
+echo ""
+echo "=== Bootstrap complete! ==="
+echo ""
+echo "Optional tool setup (run as needed):"
+echo "  ./python/install.sh  # Set up Python"
+echo "  ./vscode/install.sh  # Set up VSCode settings and extensions"
+echo ""
