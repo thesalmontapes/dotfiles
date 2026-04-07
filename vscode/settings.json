@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Visual Studio Dark",
+    "claudeCode.preferredLocation": "panel",
+    "go.goroot": "/opt/homebrew/opt/go/libexec",
+    "go.gopath": "~/go"
+}

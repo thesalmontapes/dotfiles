@@ -8,6 +8,7 @@ tap "homebrew/cask-fonts"
 cask "font-fira-code-nerd-font"
 cask "google-cloud-sdk"
 cask "soundsource"
+cask "visual-studio-code"
 
 # Tools
 brew "curl"

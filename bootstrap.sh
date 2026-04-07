@@ -11,7 +11,11 @@ rsync --exclude ".git" \
       --exclude "bootstrap.sh" \
       --exclude "README.md" \
       --exclude "Brewfile" \
-      -avh --no-perms . $HOME 
+      --exclude "vscode" \
+      -avh --no-perms . $HOME
 
 source $HOME/.zshenv
 source $HOME/.zshrc
+
+# VSCode configuration
+./vscode/install.sh
