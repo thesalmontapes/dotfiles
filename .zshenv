@@ -4,9 +4,11 @@ export EDITOR='nvim'
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export GOPATH=$HOME/go
-export GOROOT=$(brew --prefix golang)/libexec
+# Hardcoded path instead of slow $(brew --prefix golang) call
+export GOROOT=/opt/homebrew/opt/go/libexec
 export PATH=$GOPATH/bin:$PATH
 export PATH=$GOROOT/bin:$PATH
 
-export JAVA_HOME=$(brew --prefix openjdk)
+# Hardcoded path instead of slow $(brew --prefix openjdk) call
+export JAVA_HOME=/opt/homebrew/opt/openjdk
 export PATH=$JAVA_HOME/bin:$PATH
