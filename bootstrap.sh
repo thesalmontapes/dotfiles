@@ -17,5 +17,10 @@ rsync --exclude ".git" \
 source $HOME/.zshenv
 source $HOME/.zshrc
 
+# Python setup
+pyenv install --skip-existing 2.7.18
+pyenv install --skip-existing 3.10.0
+pyenv global 3.10.0
+
 # VSCode configuration
 ./vscode/install.sh
