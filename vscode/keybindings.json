@@ -1,0 +1,76 @@
+[
+    // ============================================
+    // Window Navigation (matching your nvim Ctrl+h/j/k/l)
+    // ============================================
+    
+    // Ctrl+h - Navigate to left editor group
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft",
+        "when": "vim.active && !inDebugRepl && !suggestWidgetVisible"
+    },
+    // Ctrl+j - Navigate to bottom editor group
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown",
+        "when": "vim.active && !inDebugRepl && !suggestWidgetVisible"
+    },
+    // Ctrl+k - Navigate to top editor group
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp",
+        "when": "vim.active && !inDebugRepl && !suggestWidgetVisible"
+    },
+    // Ctrl+l - Navigate to right editor group
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight",
+        "when": "vim.active && !inDebugRepl && !suggestWidgetVisible"
+    },
+
+    // ============================================
+    // File/Buffer Navigation (matching your nvim fuzzy finder)
+    // ============================================
+    
+    // Ctrl+p - Quick open file
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen",
+        "when": "vim.active && vim.mode == 'Normal'"
+    },
+    // Ctrl+b - Switch between open buffers/editors (matching your :Buffers command)
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.showAllEditors",
+        "when": "vim.active && vim.mode == 'Normal'"
+    },
+    // Ctrl+e - Open file explorer (matching your :Explore command)
+    {
+        "key": "ctrl+e",
+        "command": "workbench.view.explorer",
+        "when": "vim.active && vim.mode == 'Normal'"
+    },
+
+    // ============================================
+    // File Explorer Navigation
+    // ============================================
+
+    // Enter - Open file/folder in file explorer
+    {
+        "key": "enter",
+        "command": "list.select",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // l - Open file/folder (vim-style)
+    {
+        "key": "l",
+        "command": "list.select",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // h - Collapse folder or go to parent (vim-style)
+    {
+        "key": "h",
+        "command": "list.collapse",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    }
+]
