@@ -1,6 +1,5 @@
 {
     "workbench.colorTheme": "Visual Studio Dark",
-    "claudeCode.preferredLocation": "panel",
     "go.goroot": "/opt/homebrew/opt/go/libexec",
     "go.gopath": "~/go",
 
@@ -110,5 +109,22 @@
             "before": ["<C-k>"],
             "commands": ["editor.action.triggerParameterHints"]
         }
-    ]
+    ],
+
+    // ============================================
+    // Claude Code Extension Configuration
+    // ============================================
+
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.environmentVariables": [
+      {
+        "name": "CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS",
+        "value": "1"
+      },
+      {
+        "name": "CLAUDE_CODE_USE_VERTEX",
+        "value": "0"
+      }
+    ],
+    "claudeCode.disableLoginPrompt": true
 }

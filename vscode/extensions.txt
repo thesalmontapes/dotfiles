@@ -1,5 +1,4 @@
 anthropic.claude-code
-augment.vscode-augment
 golang.go
 ms-python.debugpy
 ms-python.python
