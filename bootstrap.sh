@@ -15,5 +15,3 @@ rsync --exclude ".git" \
 
 source $HOME/.zshenv
 source $HOME/.zshrc
-
-.config/alacritty/update-alacritty-icon.sh

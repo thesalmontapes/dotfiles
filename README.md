@@ -12,9 +12,3 @@ Run the install script.
 ```
 source bootstrap.sh
 ```
-
-If Alacritty does not open, try:
-
-```
-brew install --cask --no-quarantine alacritty
-```

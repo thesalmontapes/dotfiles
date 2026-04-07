@@ -5,7 +5,6 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 
 # Casks
-cask "alacritty"
 cask "font-fira-code-nerd-font"
 cask "google-cloud-sdk"
 cask "soundsource"
