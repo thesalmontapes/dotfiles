@@ -2,5 +2,113 @@
     "workbench.colorTheme": "Visual Studio Dark",
     "claudeCode.preferredLocation": "panel",
     "go.goroot": "/opt/homebrew/opt/go/libexec",
-    "go.gopath": "~/go"
+    "go.gopath": "~/go",
+
+    // ============================================
+    // Vim Extension Configuration
+    // ============================================
+
+    // Basic vim settings
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": false,
+    "vim.smartRelativeLine": true,
+    "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.incsearch": true,
+
+    // Show relative line numbers
+    "editor.lineNumbers": "relative",
+
+    // Let VSCode handle these Ctrl keys for split navigation
+    "vim.handleKeys": {
+        "<C-h>": false,
+        "<C-j>": false,
+        "<C-k>": false,
+        "<C-l>": false,
+        "<C-p>": false,
+        "<C-b>": false,
+        "<C-e>": false
+    },
+
+    // Normal mode keybindings
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // Y yanks to end of line
+        {
+            "before": ["Y"],
+            "after": ["y", "$"]
+        },
+        // gd - Go to definition (works by default but explicitly mapped for clarity)
+        {
+            "before": ["g", "d"],
+            "commands": ["editor.action.revealDefinition"]
+        },
+        // K - Hover (show documentation)
+        {
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
+        },
+        // gi - Go to implementation
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        // gr - Go to references
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.goToReferences"]
+        },
+
+        // Leader key mappings (matching your <space> leader)
+        // <space>e - Open diagnostic float (your: vim.diagnostic.open_float)
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["editor.action.showHover"]
+        },
+        // <space>q - Diagnostic quickfix list (your: vim.diagnostic.setloclist)
+        {
+            "before": ["<leader>", "q"],
+            "commands": ["workbench.actions.view.problems"]
+        },
+        // <space>rn - Rename symbol (your: vim.lsp.buf.rename)
+        {
+            "before": ["<leader>", "r", "n"],
+            "commands": ["editor.action.rename"]
+        },
+        // <space>f - Format document (your: vim.lsp.buf.format)
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["editor.action.formatDocument"]
+        },
+
+        // Diagnostic navigation (matching your [d and ]d)
+        // [d - Previous diagnostic
+        {
+            "before": ["[", "d"],
+            "commands": ["editor.action.marker.prevInFiles"]
+        },
+        // ]d - Next diagnostic
+        {
+            "before": ["]", "d"],
+            "commands": ["editor.action.marker.nextInFiles"]
+        }
+    ],
+
+    // Visual mode keybindings
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // <space>f - Format selection
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["editor.action.formatSelection"]
+        }
+    ],
+
+    // Insert mode keybindings
+    "vim.insertModeKeyBindings": [
+        // Ctrl+k for signature help (matching your LSP config)
+        {
+            "before": ["<C-k>"],
+            "commands": ["editor.action.triggerParameterHints"]
+        }
+    ]
 }

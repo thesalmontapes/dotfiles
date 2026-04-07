@@ -36,5 +36,12 @@ elif ! command -v code &> /dev/null; then
     echo "⚠ 'code' command not found. Install VSCode and add 'code' to PATH to install extensions."
 fi
 
+# Enable key repeat for VSCode (allows holding down j, k, h, l for navigation)
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    echo "Configuring macOS key repeat for VSCode..."
+    defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+    echo "✓ Key repeat enabled (restart VSCode for changes to take effect)"
+fi
+
 echo "Done! VSCode configuration applied."
 
